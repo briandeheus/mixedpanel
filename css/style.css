@@ -1,0 +1,242 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    position: relative;
+    font-size: 12px;
+    margin: 0;
+    background-color: #506F8C;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 6px 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+table {
+    font-size: 1em;
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 6px;
+}
+
+table thead {
+    background-color: #4F6E8D;
+    border-radius: 5px;
+    color: white;
+}
+
+table thead tr th {
+    font-weight: normal;
+}
+
+table tbody tr td,
+table thead tr th {
+    padding: 8px 4px;
+    vertical-align: top;
+}
+
+table tbody tr td.numeric {
+    text-align: right;
+}
+
+table tbody tr td {
+    border-left: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+table tbody tr td:last-child {
+    border-right: 1px solid #F2F2F2;
+}
+
+table thead tr:first-child th:first-child {
+    border-radius: 5px 0 0 0;
+}
+
+table thead tr:first-child th:last-child {
+    border-radius: 0 5px 0 0;
+}
+
+table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+}
+
+table tbody tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+section.form-group {
+    margin-bottom: 8px;
+}
+
+section.form-group label {
+    margin-bottom: 6px;
+    font-size: 1em;
+    width: 15%;
+    display: inline-block;
+}
+
+section.form-group select,
+section.form-group textarea,
+section.form-group input:not([type="radio"]):not([type="checkbox"]) {
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid #F2F2F2;
+    padding: 8px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.04);
+    vertical-align: middle;
+    font-size: 1em;
+}
+
+section.form-group textarea {
+    min-height: 200px;
+}
+
+section.form-group select {
+    height: 30px;
+}
+
+button {
+    border: 1px solid #00AFEF;
+    border-radius: 0;
+    background-color: #00AFEF;
+    font-size: 1em;
+    outline: none;
+    color: white;
+    padding: 6px 18px;
+    margin: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: #00AFEF;
+}
+
+button.red {
+    border: 1px solid #F44336;
+    background-color: #F44336;
+}
+
+button.red:hover {
+    background-color: white;
+    color: #F44336;
+}
+
+button.orange {
+    border: 1px solid #FF9800;
+    background-color: #FF9800;
+}
+
+button.orange:hover {
+    color: #FF9800;
+    background-color: white;
+}
+
+button.green {
+    border: 1px solid #4CAF50;
+    background-color: #4CAF50;
+}
+
+button.green:hover {
+    color: #4CAF50;
+    background-color: white;
+}
+
+.container {
+    width: 900px;
+    margin: 32px auto;
+    border: 1px solid #59758D;
+    height: 600px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    position: relative;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.navigation {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #DDE7EC;
+    background-color: #EDF1F8;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navigation .header {
+    color: #718695;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 16px;
+    margin-top: 16px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li a {
+    padding: 8px 16px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.navigation li:hover,
+.navigation li.active {
+    background-color: #00B0EC;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation li .fa {
+    font-size: 0.8em;
+    margin-right: 6px;
+    color: #4F6E8D;
+}
+
+.navigation li.active .fa {
+    color: white;
+}
+
+.app {
+    position: relative;
+    width: 85%;
+    left: 15%;
+    padding: 16px;
+    box-sizing: border-box;
+    height: 600px;
+    overflow: scroll;
+}
