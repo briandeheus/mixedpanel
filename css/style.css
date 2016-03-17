@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: inherit;
+    color: #506F8C;
     text-decoration: none;
 }
 
@@ -171,6 +171,54 @@ button.green:hover {
     background-color: white;
 }
 
+section.card {
+    margin-bottom: 8px;
+}
+
+section.card .card-title{
+    background-color: #4F6E8D;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    width: 100%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+}
+
+section.card .card-title .fa {
+    margin-right: 6px;
+}
+
+section.card .card-title h1,
+section.card .card-title h2,
+section.card .card-title h3 {
+    margin: 0;
+}
+
+section.card .card-body {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    border-radius: 0 0 5px 5px;
+}
+
+section.card .card-body p:first-child {
+    margin-top: 0;
+}
+
+section.card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+section.card .card-body table tbody tr td {
+    border-color: white;
+}
+
+section.card .card-body table tbody tr td:last-child {
+    border-color: white;
+}
+
+
 .container {
     width: 900px;
     margin: 32px auto;
@@ -211,6 +259,15 @@ button.green:hover {
     padding: 8px 16px;
     box-sizing: border-box;
     display: block;
+    color: black;
+}
+
+.navigation li.active a {
+    color: white;
+}
+
+.navigation li a:hover {
+    color: white;
 }
 
 .navigation li:hover,
