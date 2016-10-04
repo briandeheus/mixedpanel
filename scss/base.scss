@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    position: relative;
+    font-size: 12px;
+    margin: 0;
+    background-color: #506F8C;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #506F8C;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 6px 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+p {
+    line-height: 1.5em;
+}
