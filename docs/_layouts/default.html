@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/mixpanel.css">
+      <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+          <div class="header">Elements</div>
+          <ul>
+              <li {% if page.active == "index" %}class="active" {%endif%}>
+                  <a href="/">
+                      <i class="fa fa-plus"></i> Text & Tables
+                  </a>
+              <li {% if page.active == "forms" %}class="active" {%endif%}>
+                  <a href="forms.html">
+                      <i class="fa fa-building-o"></i> Forms
+                  </a>
+              <li {% if page.active == "cards" %}class="active" {%endif%}>
+                  <a href="cards.html">
+                      <i class="fa fa-calendar"></i> Cards
+                  </a>
+              </li>
+              <li {% if page.active == "grid" %}class="active" {%endif%}>
+                  <a href="grid.html">
+                      <i class="fa fa-rocket"></i> Grid
+                  </a>
+              </li>
+          </ul>
+      </div>
+        <div class="app">
+            {{ content }}
+        </div>
+    </div>
+  </body>
+</html>
