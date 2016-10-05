@@ -41,6 +41,12 @@ p {
   position: relative;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
   overflow: hidden; }
+  .container--full-width {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+    border: 0; }
 
 .navigation {
   width: 15%;
@@ -231,7 +237,7 @@ button.green:hover {
   left: 15%;
   padding: 16px;
   box-sizing: border-box;
-  height: 600px;
+  height: 100%;
   overflow: scroll; }
 
 /*# sourceMappingURL=mixpanel.css.map */

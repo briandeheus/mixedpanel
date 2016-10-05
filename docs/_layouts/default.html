@@ -8,33 +8,50 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="container">
       <div class="navigation">
           <div class="header">Elements</div>
           <ul>
               <li {% if page.active == "index" %}class="active" {%endif%}>
-                  <a href="/">
+                  <a href="/mixedpanel/">
                       <i class="fa fa-plus"></i> Text & Tables
                   </a>
               <li {% if page.active == "forms" %}class="active" {%endif%}>
-                  <a href="forms.html">
+                  <a href="forms">
                       <i class="fa fa-building-o"></i> Forms
                   </a>
               <li {% if page.active == "cards" %}class="active" {%endif%}>
-                  <a href="cards.html">
+                  <a href="cards">
                       <i class="fa fa-calendar"></i> Cards
                   </a>
               </li>
               <li {% if page.active == "grid" %}class="active" {%endif%}>
-                  <a href="grid.html">
+                  <a href="grid">
                       <i class="fa fa-rocket"></i> Grid
                   </a>
               </li>
+              <div class="header">
+                  <button id="toggle">Toggle Full-width</button>
+              </div>
           </ul>
       </div>
         <div class="app">
             {{ content }}
         </div>
     </div>
+  <script>
+      var btn = document.getElementById('toggle');
+      var container = document.getElementById('container');
+
+      btn.addEventListener('click', function () {
+
+          if (container.className.indexOf('container--full-width') >= 0) {
+              container.classList.remove('container--full-width');
+          } else {
+              container.classList.add('container--full-width');
+          }
+
+      });
+  </script>
   </body>
 </html>
